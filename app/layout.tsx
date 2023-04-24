@@ -1,6 +1,9 @@
+"use client";
+
 import "./global.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { ThemeProvider } from "@mui/material";
 
 export default function RootLayout({
   children,
@@ -11,9 +14,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Header />
-        <main>
-          <div className="content">{children}</div>
-        </main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

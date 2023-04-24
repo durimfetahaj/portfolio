@@ -20,9 +20,16 @@
       }
     ],
       "baseUrl": ".",
-    "paths": {
-      "@/components/*": ["components/*"]
-    }
+   "paths": {
+            "@components/*": ["./components/*"],
+            "@hooks/*": ["./hooks/*"],
+            "@utils/*": ["./utils/*"],
+            "@assets/*": ["./assets/*"],
+            "@layouts/*": ["./layouts/*"],
+            "@api/*": ["./api/*"],
+            "@store/*": ["./store/*"],
+            "@app/*": ["./*"]
+        }
   },
   "include": [
     "next-env.d.ts",
