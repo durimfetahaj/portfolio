@@ -1,0 +1,31 @@
+* {
+  box-sizing: "border-box";
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #202020;
+  color: #dedede;
+}
+
+main {
+  height: 100%;
+  padding: 130px 100px;
+}
