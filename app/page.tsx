@@ -5,10 +5,8 @@ import styled from "@emotion/styled";
 const Home = () => {
   return (
     <Wrapper>
-      <h1>Main</h1>
-      <p>
-        Visit the <Link href="/about">About</Link> page.
-      </p>
+      <h1>Home</h1>
+      <p></p>
     </Wrapper>
   );
 };
