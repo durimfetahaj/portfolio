@@ -1,7 +1,9 @@
 "use client";
+
 import styled from "@emotion/styled";
 import { name, about, bio, avatar } from "@/app/lib/info";
 import { FiArrowUpRight } from "react-icons/fi";
+import { Container } from "@mui/material";
 
 const Home = () => {
   return (
@@ -18,7 +20,7 @@ const Home = () => {
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="https://twitter.com/FetahajDurim"
+              href="https://www.linkedin.com/in/durimfetahaj/"
             >
               <FiArrowUpRight />
               <p>check me on linkedin</p>

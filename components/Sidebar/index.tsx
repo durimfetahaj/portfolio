@@ -67,6 +67,9 @@ const Wrapper = styled.div`
 
     a {
       all: unset;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       color: #737373;
       cursor: pointer;
       padding: 8px;
