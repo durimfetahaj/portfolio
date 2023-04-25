@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Manrope&display=swap");
+
 * {
   box-sizing: "border-box";
   margin-block-start: 0px;
   margin-block-end: 0px;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Kaisei Decol", serif;
 }
 
 html {
@@ -20,6 +22,6 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  background-color: #202020;
-  color: #dedede;
+  background-color: #111010;
+  color: #fff;
 }

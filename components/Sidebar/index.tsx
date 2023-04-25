@@ -11,6 +11,9 @@ const navItems = {
   "/about": {
     name: "about",
   },
+  "/work": {
+    name: "work",
+  },
 };
 
 export default function Sidebar() {
@@ -46,18 +49,19 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   margin-right: 70px;
+  min-width: 100%;
 
   svg {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-left: 10px;
   }
 
   nav {
     display: flex;
     gap: 10px;
-    font-weight: 700;
+    font-weight: 600;
 
-    @media (min-width: 600px) {
+    @media (min-width: 770px) {
       flex-direction: column;
     }
 

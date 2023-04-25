@@ -22,7 +22,8 @@
     "baseUrl": ".",
     "paths": {
       "@/components/*": ["components/*"],
-      "@/assets/*": ["assets/*"]
+      "@/assets/*": ["assets/*"],
+      "@/app/*": ["app/*"]
     }
   },
   "include": [
@@ -30,7 +31,8 @@
     "**/*.ts",
     "**/*.tsx",
     "next.config.js",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "."
   ],
   "exclude": ["node_modules"]
 }
