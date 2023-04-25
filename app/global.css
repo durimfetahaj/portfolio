@@ -13,7 +13,6 @@ html {
   width: 100%;
   height: 100%;
   -webkit-overflow-scrolling: touch;
-  overflow-y: scroll;
 }
 
 body {
@@ -23,9 +22,4 @@ body {
   height: 100%;
   background-color: #202020;
   color: #dedede;
-}
-
-main {
-  height: 100%;
-  padding: 130px 100px;
 }

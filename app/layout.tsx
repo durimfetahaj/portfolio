@@ -1,10 +1,8 @@
 "use client";
 
 import "./global.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import { ThemeProvider } from "@mui/material";
-
+import Sidebar from "@/components/Sidebar";
+import { Container } from "@mui/material";
 export default function RootLayout({
   children,
 }: {
@@ -13,9 +11,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <Container sx={{ display: "flex", paddingTop: { xs: 3, sm: 30 } }}>
+          <Sidebar />
+          <main>{children}</main>
+        </Container>
       </body>
     </html>
   );
