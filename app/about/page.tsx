@@ -102,7 +102,6 @@ const Wrapper = styled.div`
   }
 
   .sc-media-link-item {
-    margin-top: 20px;
     a {
       all: unset;
       display: flex;
