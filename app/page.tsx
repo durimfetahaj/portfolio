@@ -3,7 +3,6 @@
 import styled from "@emotion/styled";
 import { name, about, bio, avatar } from "@/app/lib/info";
 import { FiArrowUpRight } from "react-icons/fi";
-import { Container } from "@mui/material";
 
 const Home = () => {
   return (

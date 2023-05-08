@@ -12,24 +12,25 @@ export default function AboutPage() {
       <section>
         <h1>About Me</h1>
         <p className="my-5 text-neutral-800 dark:text-neutral-200">
-          Hey, I'm Durim. I am from Kosovo.
+          Hey, I'm Durim.
         </p>
         <div>
           <p>
-            I'm currently a <b>Front-end React developer as a freelancer</b>,
-            and in the meantime learning the MERN stack as well.
+            I'm a <b>passionate front-end developer </b> with some experience. I
+            specialize in creating beautiful and responsive websites using
+            modern technologies like React, Next, Mui, and JavaScript.
           </p>
           <hr />
           <p>
-            I'm passionate about many creative pursuits, including video-games,
-            music, movies and of course, coding. I try to live a healthy
-            balanced life-style and I've been doing okay on this as well.
+            I have an eye for design and always strive to create visually
+            appealing and user-friendly interfaces. When I'm not coding, you can
+            find me exploring the great outdoors or gaming.
           </p>
           <p>
-            I <b>love</b> building for the web. From something as simple as a
-            single HTML file – all the way to large Next.js applications. The
-            web is incredible. Anyone can become a developer, writer, or creator
-            – and no one has to ask for permission. You can just build.
+            I am <b>dedicated </b>
+            to constantly improving my skills and staying up-to-date with the
+            latest trends in the industry. Let's work together to bring your
+            digital vision to life!"
           </p>
 
           <Grid container spacing={2}>
@@ -99,6 +100,7 @@ const Wrapper = styled.div`
     border-color: #737373;
     border-top-width: 1px;
     margin: 48px 0px;
+    max-width: 90%;
   }
 
   .sc-media-link-item {
@@ -123,7 +125,7 @@ const Wrapper = styled.div`
       }
 
       &:hover {
-        background-color: rgba(180, 180, 180, 0.1);
+        border-color: #fff;
       }
     }
   }

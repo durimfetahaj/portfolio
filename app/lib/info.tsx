@@ -1,7 +1,6 @@
-import me from "../../public/images/me.png";
-
 export const name = "Durim Fetahaj";
-export const avatar = me;
+export const avatar = "/images/me.png";
+
 export const about = () => {
   return (
     <>

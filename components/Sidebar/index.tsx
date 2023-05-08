@@ -1,8 +1,8 @@
 import styled from "@emotion/styled";
 import React from "react";
-import Logo from "@/assets/logo/main.svg";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import Logo from "public/images/main.svg";
 
 const navItems = {
   "/": {
@@ -11,8 +11,8 @@ const navItems = {
   "/about": {
     name: "about",
   },
-  "/work": {
-    name: "work",
+  "/projects": {
+    name: "projects",
   },
 };
 
@@ -48,8 +48,8 @@ export default function Sidebar() {
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin-right: 70px;
-  min-width: 100%;
+  margin-right: 30px;
+  min-width: 5%;
 
   svg {
     margin-bottom: 10px;
