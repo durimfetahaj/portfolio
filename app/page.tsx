@@ -29,7 +29,7 @@ const Home = () => {
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="https://github.com/durimf"
+              href="https://github.com/durimfetahaj"
             >
               <FiArrowUpRight />
               <p>check me on github</p>
