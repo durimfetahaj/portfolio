@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import React from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import Logo from "public/images/main.svg";
+import Logo from "public/assets/images/main.svg";
 
 const navItems = {
   "/": {

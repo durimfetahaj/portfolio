@@ -51,7 +51,7 @@ export default function AboutPage() {
               <a
                 rel="noopener noreferrer"
                 target="_blank"
-                href="https://github.com/durimf"
+                href="https://github.com/durimfetahaj"
               >
                 <div className="left">
                   <FaGithub />
@@ -64,7 +64,7 @@ export default function AboutPage() {
               <a
                 rel="noopener noreferrer"
                 target="_blank"
-                href="https://www.youtube.com/@leerob"
+                href="https://www.linkedin.com/in/durimfetahaj/"
               >
                 <div className="left">
                   <FaLinkedin />
