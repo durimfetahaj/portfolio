@@ -1,7 +1,5 @@
 "use client";
 import styled from "@emotion/styled";
-import Grid from "@mui/material/Grid";
-import { BsBoxArrowUpRight } from "react-icons/bs";
 import { projects } from "../lib/dummy";
 import ProjectCard from "./ProjectCard";
 

@@ -4,7 +4,7 @@ export const projects = [
     title: "Next.js CRM Landing page",
     description:
       "Simple static landing page using Next.js, Material UI and styled-components",
-    imageUrl: "/images/project-1.png",
+    imageUrl: "assets/images/project-1.png",
     demoLink: "https://cloud-crm-web.vercel.app/",
     githubLink: "https://github.com/durimfetahaj/cloud_crm_web",
   },

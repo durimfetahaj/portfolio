@@ -11,7 +11,7 @@ const Home = () => {
         <h1>{name}</h1>
         <p>{about()}</p>
         <div className="img-cnt">
-          <img alt={name} src="images/me.png" />
+          <img alt={name} src={avatar} />
         </div>
         <p>{bio()}</p>
         <ul>
