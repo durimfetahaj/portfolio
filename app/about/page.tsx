@@ -1,84 +1,74 @@
 "use client";
+
+import React from "react";
 import styled from "@emotion/styled";
 import { Grid } from "@mui/material";
-import { FaTwitter } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FiArrowUpRight } from "react-icons/fi";
-import { FaLinkedin } from "react-icons/fa";
 
-export default function AboutPage() {
+const AboutPage = () => {
   return (
     <Wrapper>
       <section>
         <h1>About Me</h1>
-        <p className="my-5 text-neutral-800 dark:text-neutral-200">
-          Hey, I'm Durim.
+        <p>
+          Hey, I'm Durim, a passionate front-end developer with a focus on
+          creating beautiful and responsive websites. With a solid foundation in
+          technologies like React, Next.js, Material-UI, and JavaScript, I bring
+          a blend of technical expertise and design sensibility to every
+          project.
         </p>
         <div>
           <p>
-            I'm a <b>passionate front-end developer </b> with some experience. I
-            specialize in creating beautiful and responsive websites using
-            modern technologies like React, Next, Mui, and JavaScript.
+            I have a keen eye for design and always strive to create visually
+            appealing and user-friendly interfaces. From crafting seamless user
+            experiences to implementing modern design trends, I am committed to
+            delivering high-quality websites that captivate and engage users.
           </p>
           <hr />
           <p>
-            I have an eye for design and always strive to create visually
-            appealing and user-friendly interfaces. When I'm not coding, you can
-            find me exploring the great outdoors or gaming.
+            Aside from coding, I find joy in exploring the great outdoors, gym
+            and gaming. These experiences fuel my creativity and inspire me to
+            think outside the box when approaching new projects.
           </p>
           <p>
-            I am <b>dedicated </b>
-            to constantly improving my skills and staying up-to-date with the
-            latest trends in the industry. Let's work together to bring your
-            digital vision to life!"
+            As an eager learner, I am dedicated to continuously improving my
+            skills and staying up-to-date with the latest industry trends. I
+            actively seek opportunities to expand my knowledge and embrace new
+            technologies to ensure that my work remains at the forefront of
+            innovation.
+          </p>
+          <p>
+            Let's collaborate and bring your digital vision to life! Whether
+            you're looking to create a stunning website, develop an interactive
+            web application, or revamp your existing online presence, I'm here
+            to turn your ideas into reality.
           </p>
 
           <Grid container spacing={2}>
-            <Grid item xs={12} md={3} className="sc-media-link-item">
-              <a
-                rel="noopener noreferrer"
-                target="_blank"
-                href="https://twitter.com/FetahajDurim"
+            {socialLinks.map((link) => (
+              <Grid
+                item
+                xs={12}
+                md={3}
+                className="sc-media-link-item"
+                key={link.name}
               >
-                <div className="left">
-                  <FaTwitter />
-                  <div>Twitter</div>
-                </div>
-                <FiArrowUpRight />
-              </a>
-            </Grid>
-            <Grid item xs={12} md={3} className="sc-media-link-item">
-              <a
-                rel="noopener noreferrer"
-                target="_blank"
-                href="https://github.com/durimfetahaj"
-              >
-                <div className="left">
-                  <FaGithub />
-                  <div>GitHub</div>
-                </div>
-                <FiArrowUpRight />
-              </a>
-            </Grid>
-            <Grid item xs={12} md={3} className="sc-media-link-item">
-              <a
-                rel="noopener noreferrer"
-                target="_blank"
-                href="https://www.linkedin.com/in/durimfetahaj/"
-              >
-                <div className="left">
-                  <FaLinkedin />
-                  <div>LinkedIn</div>
-                </div>
-                <FiArrowUpRight />
-              </a>
-            </Grid>
+                <a rel="noopener noreferrer" target="_blank" href={link.url}>
+                  <div className="left">
+                    {link.icon}
+                    <div>{link.name}</div>
+                  </div>
+                  <FiArrowUpRight />
+                </a>
+              </Grid>
+            ))}
           </Grid>
         </div>
       </section>
     </Wrapper>
   );
-}
+};
 
 const Wrapper = styled.div`
   h1 {
@@ -130,3 +120,23 @@ const Wrapper = styled.div`
     }
   }
 `;
+
+const socialLinks = [
+  {
+    name: "Twitter",
+    icon: <FaTwitter />,
+    url: "https://twitter.com/FetahajDurim",
+  },
+  {
+    name: "GitHub",
+    icon: <FaGithub />,
+    url: "https://github.com/durimfetahaj",
+  },
+  {
+    name: "LinkedIn",
+    icon: <FaLinkedin />,
+    url: "https://www.linkedin.com/in/durimfetahaj/",
+  },
+];
+
+export default AboutPage;
