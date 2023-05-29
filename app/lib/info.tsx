@@ -1,5 +1,5 @@
 export const name = "Durim Fetahaj";
-export const avatar = "/images/me.png";
+export const avatar = "assets/images/me.png";
 
 export const about = () => {
   return (
