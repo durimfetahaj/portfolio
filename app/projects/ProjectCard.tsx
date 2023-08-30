@@ -4,6 +4,7 @@ import styled from "@emotion/styled";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LaunchIcon from "@mui/icons-material/Launch";
 import { Grid } from "@mui/material";
+import Image from "next/image";
 
 type Project = {
   id: number;
@@ -25,7 +26,13 @@ const ProjectCard = ({ projects }: Props) => {
         ({ id, title, description, imageUrl, demoLink, githubLink }) => (
           <Grid item xs={12} md={6} key={id}>
             <Card>
-              <img src={imageUrl} alt={title} />
+              <Image
+                src={imageUrl}
+                alt="Picture of the author"
+                width={200}
+                height={200}
+                unoptimized
+              />
               <CardContent>
                 <h3>{title}</h3>
                 <p>{description}</p>
@@ -77,6 +84,10 @@ const CardContent = styled.div`
     font-size: 14px;
     line-height: 1.4;
     color: #666;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
   }
 `;
 
