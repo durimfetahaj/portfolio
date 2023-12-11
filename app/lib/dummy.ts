@@ -14,7 +14,7 @@ export const projects = [
     description:
       "Modern e-commerce dashboard using NextJS Firebase Tailwind CSS,TypeScript",
     imageUrl: "/assets/images/project-2.png",
-    demoLink: "https://metrixapp.vercel.app/dashboard",
-    githubLink: "https://github.com/durimfetahaj/metrix-app",
+    demoLink: "https://metrix-commerce.vercel.app/",
+    githubLink: "https://github.com/durimfetahaj/metrix",
   },
 ];
