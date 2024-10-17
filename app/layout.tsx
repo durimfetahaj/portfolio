@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className={roboto.className}>
         <Container
           maxWidth="md"
           sx={{ padding: { xs: "12px", md: "120px 0px" } }}
@@ -38,7 +38,7 @@ export default function RootLayout({
               <Sidebar />
             </Grid>
             <Grid item xs={12} md={9}>
-              <main className={roboto.className}>{children}</main>
+              <main>{children}</main>
             </Grid>
           </Grid>
         </Container>
