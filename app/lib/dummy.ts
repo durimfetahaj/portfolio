@@ -9,12 +9,21 @@ export const projects = [
     githubLink: "https://github.com/durimfetahaj/cloud_crm_web",
   },
   {
-    id: 1,
+    id: 2,
     title: "Metrix E-commerce dashboard",
     description:
       "Modern e-commerce dashboard using NextJS Firebase Tailwind CSS,TypeScript",
     imageUrl: "/assets/images/project-2.png",
     demoLink: "https://metrix-commerce.vercel.app/",
     githubLink: "https://github.com/durimfetahaj/metrix",
+  },
+  {
+    id: 3,
+    title: "Foodery: QR Code Dining Revolution",
+    description:
+      "Modern food ordering platform developed using Next.js, TypeScript,Tailwind CSS.",
+    imageUrl: "/assets/images/project-3.png",
+    demoLink: "https://foodery-one-photos.vercel.app/",
+    githubLink: null,
   },
 ];

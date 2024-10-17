@@ -5,6 +5,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LaunchIcon from "@mui/icons-material/Launch";
 import { Grid } from "@mui/material";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 type Project = {
   id: number;
@@ -12,7 +13,7 @@ type Project = {
   description: string;
   imageUrl: string;
   demoLink: string;
-  githubLink: string;
+  githubLink: string | null;
 };
 
 type Props = {
@@ -20,30 +21,33 @@ type Props = {
 };
 
 const ProjectCard = ({ projects }: Props) => {
+  const router = useRouter();
   return (
     <Grid container spacing={3}>
       {projects?.map(
         ({ id, title, description, imageUrl, demoLink, githubLink }) => (
           <Grid item xs={12} md={6} key={id}>
             <Card>
-              <Image
+              <img
                 src={imageUrl}
-                alt="Picture of the author"
+                alt="Picture of the project"
                 width={200}
                 height={200}
-                unoptimized
               />
+
               <CardContent>
                 <h3>{title}</h3>
                 <p>{description}</p>
                 <Links>
-                  <a
-                    href={githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <GitHubIcon />
-                  </a>
+                  {githubLink && (
+                    <a
+                      href={githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <GitHubIcon />
+                    </a>
+                  )}
                   <a href={demoLink} target="_blank" rel="noopener noreferrer">
                     <LaunchIcon />
                   </a>
