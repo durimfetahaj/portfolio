@@ -23,7 +23,7 @@ export const projects = [
     description:
       "Modern food ordering platform developed using Next.js, TypeScript,Tailwind CSS.",
     imageUrl: "/assets/images/project-3.png",
-    demoLink: "https://foodery-one-photos.vercel.app/",
+    demoLink: "https://foodery-one-review.vercel.app/",
     githubLink: null,
   },
 ];
